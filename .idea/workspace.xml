@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe60248e-7f56-4220-9dc6-847388d371f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ingredients/test/testIngredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/inventories/GroceryInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/inventories/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/inventories/KitchenInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/inventories/RecipeIngredients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/inventories/test/testKitchenInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/inventories/test/testRecipeIngredients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FoodTracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/GroceryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/model/GroceryList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/IngredientStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/model/IngredientStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredientTypes/Dairy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredientTypes/Ingredient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredientTypes/Pantry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredientTypes/Produce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredientTypes/Protein.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/recipes/Recipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/model/recipes/Recipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/test/TestGroceryList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/test/TestGroceryList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/ui/ListMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/ui/ListMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/ui/test/TestListMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/ui/test/TestListMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/GroceryList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/GroceryList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/IngredientStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IngredientStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/ingredients/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ingredients/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/recipes/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/recipes/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestGroceryList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testRecipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ListMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ListMaker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,37 +66,49 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="53" />
+          <entry key="java" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="53" />
+          <entry key="JAVA" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="42" />
-          <entry key="java" value="18916" />
+          <entry key="dummy" value="51" />
+          <entry key="java" value="22448" />
           <entry key="txt" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18916" />
-          <entry key="PLAIN_TEXT" value="64" />
+          <entry key="JAVA" value="22448" />
+          <entry key="PLAIN_TEXT" value="73" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/ingredients/Ingredient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="231">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/inventories/GroceryInventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,69 +117,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/test/TestListMaker.java">
+        <entry file="file://$PROJECT_DIR$/src/model/IngredientStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+            <state relative-caret-position="438">
+              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/recipes/Recipe.java">
+        <entry file="file://$PROJECT_DIR$/src/model/inventories/KitchenInventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-                <element signature="e#1382#1383#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1489#1490#0" expanded="true" />
-                <element signature="e#1520#1521#0" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="e#1698#1699#0" expanded="true" />
-                <element signature="e#1724#1725#0" expanded="true" />
-                <element signature="e#2259#2260#0" expanded="true" />
-                <element signature="e#2354#2355#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/RecipeIndex.java">
+        <entry file="file://$PROJECT_DIR$/src/model/inventories/Inventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="51" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/ingredients/Measurement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="311">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
               <folding>
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#173#174#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1661#1662#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,20 +158,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/GroceryList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="131">
+              <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/exceptions/QuantityException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -199,19 +201,28 @@
         <option value="$PROJECT_DIR$/src/model/exceptions/invalidType.java" />
         <option value="$PROJECT_DIR$/src/ui/ListUser.java" />
         <option value="$PROJECT_DIR$/src/ui/Checklist.java" />
-        <option value="$PROJECT_DIR$/src/test/TestGroceryList.java" />
         <option value="$PROJECT_DIR$/src/model/ingredientTypes/Produce.java" />
-        <option value="$PROJECT_DIR$/src/model/IngredientStorage.java" />
-        <option value="$PROJECT_DIR$/src/model/GroceryList.java" />
-        <option value="$PROJECT_DIR$/src/ui/ListMaker.java" />
         <option value="$PROJECT_DIR$/src/ui/test/TestListMaker.java" />
         <option value="$PROJECT_DIR$/src/model/ingredientTypes/Ingredient.java" />
-        <option value="$PROJECT_DIR$/src/model/recipes/Recipe.java" />
         <option value="$PROJECT_DIR$/src/ui/RecipeIndex.java" />
         <option value="$PROJECT_DIR$/src/model/ingredients/Type.java" />
         <option value="$PROJECT_DIR$/src/model/ingredients/GroceryType.java" />
         <option value="$PROJECT_DIR$/src/model/ingredients/Measurement.java" />
+        <option value="$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java" />
+        <option value="$PROJECT_DIR$/src/model/recipes/Recipe.java" />
+        <option value="$PROJECT_DIR$/src/ui/ListMaker.java" />
+        <option value="$PROJECT_DIR$/src/model/GroceryList.java" />
+        <option value="$PROJECT_DIR$/src/model/IngredientStorage.java" />
+        <option value="$PROJECT_DIR$/src/test/TestGroceryList.java" />
+        <option value="$PROJECT_DIR$/src/model/Lists.java" />
+        <option value="$PROJECT_DIR$/src/model/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/model/GroceryInventory.java" />
+        <option value="$PROJECT_DIR$/src/model/KitchenInventory.java" />
+        <option value="$PROJECT_DIR$/src/model/RecipeIngredients.java" />
+        <option value="$PROJECT_DIR$/src/model/inventories/KitchenInventory.java" />
         <option value="$PROJECT_DIR$/src/model/ingredients/Ingredient.java" />
+        <option value="$PROJECT_DIR$/src/model/inventories/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/model/inventories/GroceryInventory.java" />
       </list>
     </option>
   </component>
@@ -257,13 +268,7 @@
               <item name="FoodTracker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="recipes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FoodTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FoodTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="inventories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FoodTracker" type="b2602c69:ProjectViewProjectNode" />
@@ -290,7 +295,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
@@ -307,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Recipe">
+  <component name="RunManager" selected="Application.RecipeIngredients">
     <configuration name="ListMaker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ui.ListMaker" />
       <module name="FoodTracker" />
@@ -327,6 +332,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="model.recipes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecipeIngredients" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.inventories.RecipeIngredients" />
+      <module name="FoodTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.inventories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -364,36 +382,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestListMaker.testQ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FoodTracker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ui.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ui.test" />
-      <option name="MAIN_CLASS_NAME" value="ui.test.TestListMaker" />
-      <option name="METHOD_NAME" value="testQ" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.ListMaker" />
-      <item itemvalue="JUnit.TestListMaker.testQ" />
       <item itemvalue="JUnit.TestListMaker.testMakeIngredientValid" />
       <item itemvalue="JUnit.TestListMaker" />
       <item itemvalue="Application.Recipe" />
+      <item itemvalue="Application.RecipeIngredients" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RecipeIngredients" />
         <item itemvalue="Application.Recipe" />
         <item itemvalue="JUnit.TestListMaker" />
         <item itemvalue="JUnit.TestListMaker.testMakeIngredientValid" />
         <item itemvalue="Application.ListMaker" />
-        <item itemvalue="JUnit.TestListMaker.testQ" />
       </list>
     </recent_temporary>
   </component>
@@ -457,7 +459,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27818447" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27818447" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -467,7 +469,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.38945827" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50077397" side_tool="true" weight="0.32796487" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.499226" visible="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.499226" weight="0.32796487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -554,40 +556,10 @@
     <entry file="file://$PROJECT_DIR$/FoodTracker.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TestGroceryList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testRecipe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/IngredientStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ListMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="154" column="28" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,16 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/GroceryList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/exceptions/QuantityException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -620,10 +582,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/RecipeIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ingredients/Produce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ingredients/Measurement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/recipes/Recipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="222">
+          <caret line="108" column="93" selection-start-line="108" selection-start-column="93" selection-end-line="108" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1168#1169#0" expanded="true" />
@@ -642,42 +636,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/RecipeIndex.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/ListMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1241">
+          <caret line="78" column="81" selection-start-line="78" selection-start-column="81" selection-end-line="78" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestGroceryList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/RecipeIngredients.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ingredients/Produce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ingredients/Measurement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#98#99#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/test/testKitchenInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/test/testRecipeIngredients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ingredients/test/testIngredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ingredients/Ingredient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="231">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/GroceryList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="116" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1661#1662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/KitchenInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/IngredientStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/GroceryInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -687,6 +762,18 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -710,6 +797,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FoodTracker</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -724,6 +824,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>org.apache.commons:commons-math3:3.6.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

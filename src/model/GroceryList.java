@@ -28,7 +28,7 @@ public class GroceryList {
 
                 for (int i = 0; i < items.size(); i++) {
                     if (items.get(i).getName().equalsIgnoreCase(item.getName())) {
-                        items.get(i).addToQuantity(item.getQuantity());
+                        items.get(i).addToQuantity((int)item.getQuantity());
                         found = true;
                     }
                 }
@@ -90,12 +90,12 @@ public class GroceryList {
 
     //EFFECTS: returns true if there isn't enough of the item in inventory to meet item quantity
     private int amountNeeded(Ingredient item) {
-        int difference = item.getQuantity() - inventory.getQuantity(item.getName());
+        double difference = item.getQuantity() - inventory.getQuantity(item.getName());
 
         if (difference <= 0) {
             return 0;
         } else {
-            return Math.abs(difference);
+            return Math.abs((int) difference);
         }
     }
 
@@ -114,18 +114,6 @@ public class GroceryList {
             printString += (i + 1) + ". " + items.get(i).getName() + ": " + items.get(i).getQuantity() + "\n";
         }
         return printString;
-    }
-
-    public static void main(String[] args) throws QuantityException {
-        GroceryList l = new GroceryList();
-        Ingredient i = new Produce("ca", 7);
-        Ingredient j = new Produce("ba", 7);
-        l.addToList(i);
-        GroceryList g = new GroceryList();
-        g.addToList(j);
-        g.addToList(i);
-        System.out.println(l.inventory.getQuantity("ca"));
-
     }
 
     public IngredientStorage getInventory() {

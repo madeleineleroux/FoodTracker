@@ -18,7 +18,7 @@ public  class IngredientStorage {
         for (Ingredient i : storage) {
             if (i.equals(item)) {
                 try {
-                    i.addToQuantity(item.getQuantity());
+                    i.addToQuantity((int) item.getQuantity());
                     found = true;
                 } catch (QuantityException e) {
                     System.out.println("Failed to add item because it is an invalid quantity.");
@@ -66,7 +66,7 @@ public  class IngredientStorage {
     }
 
 
-    public int getQuantity(String name) {
+    public double getQuantity(String name) {
         for (Ingredient i: storage) {
             if (i.getName().equalsIgnoreCase(name)) {
                 return i.getQuantity();

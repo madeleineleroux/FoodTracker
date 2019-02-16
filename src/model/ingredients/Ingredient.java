@@ -9,14 +9,13 @@ public class Ingredient {
     private GroceryCategory category;
     private Measurement measurement;
     private LocalDate purchaseDate;
-    private int lifespan;
-    // Days in lifespan
-    private int DEFAULT_LIFESPAN = 5;
+    private int lifespan; //in days
     private String name;
     private LocalDate expiryDate;
     private boolean purchased;
 
     // Stores purchase date, expiry date, category, quantity, and name
+    // TODO: Figure out how to do fractions
 
     public Ingredient(String name, GroceryCategory category, double quantity, Measurement measurement) {
         this.name = name;
@@ -28,7 +27,22 @@ public class Ingredient {
 
 
     public boolean equals(Ingredient other) {
-        return other.getClass() == this.getClass() && getName().equalsIgnoreCase(other.getName());
+        return other.getClass() == this.getClass() && getName().equalsIgnoreCase(other.getName())
+                && getCategory().toString().equals(other.getCategory().toString());
+    }
+
+    //EFFECTS: returns category
+    public GroceryCategory getCategory(){
+        return category;
+    }
+    //EFFECTS: returns measurement
+    public Measurement getMeasurement() {
+        return measurement;
+    }
+
+    //EFFECTS: sets measure
+    public void setMeasurement(Measurement measurement) {
+        this.measurement = measurement;
     }
 
 
@@ -41,6 +55,23 @@ public class Ingredient {
     }
 
     //MODIFIES: this
+    //REQUIRES: a valid Grocery Category
+    //EFFECTS: sets the lifespan depending on the grocery Category
+    public void setLifespan(GroceryCategory cat) {
+        if (cat.equals(GroceryCategory.DAIRY)) {
+            lifespan = 14;
+        } else if (cat.equals(GroceryCategory.DRIED_GOODS)) {
+            lifespan = 60;
+        } else if (cat.equals(GroceryCategory.PANTRY_BAKING)) {
+            lifespan = 30 * 6;
+        } else if (cat.equals(GroceryCategory.PRODUCE)) {
+            lifespan = 5;
+        } else if (cat.equals(GroceryCategory.PROTEIN)) {
+            lifespan = 2;
+        }
+    }
+
+    //MODIFIES: this
     //EFFECTS: sets Ingredient's purchase date today, and corresponding expiry date
     public void purchase(LocalDate date) {
         purchased = true;
@@ -50,8 +81,8 @@ public class Ingredient {
 
     //MODIFIES: this
     //EFFECTS: sets Ingredient's expiry date
-    public void setExpiryDate(LocalDate date) {
-        expiryDate = date.plusDays(DEFAULT_LIFESPAN);
+    private void setExpiryDate(LocalDate date) {
+        expiryDate = date.plusDays(lifespan);
     }
 
 
@@ -65,7 +96,7 @@ public class Ingredient {
     //REQUIRES: 0 >= amount <= current quantity
     //MODIFIES: this
     //EFFECTS: removes quantity amount from ingredient
-    public void removeQuantity(int amount) throws QuantityException {
+    public void removeQuantity(double amount) throws QuantityException {
         if ((quantity -= amount) <= 0 || amount > getQuantity()) {
             throw new QuantityException("You can't remove that much.");
         }
@@ -76,7 +107,7 @@ public class Ingredient {
     //REQUIRES: amount >= 0
     //MODIFIES: this
     //EFFECTS: adds amount to quantity
-    public void addToQuantity(int amount) throws QuantityException {
+    public void addToQuantity(double amount) throws QuantityException {
         if (amount < 0) {
             throw new QuantityException("Amount must be greater or equal to 0");
         }
@@ -84,7 +115,7 @@ public class Ingredient {
     }
 
     //EFFECTS: returns quantity
-    public int getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
 
@@ -102,7 +133,7 @@ public class Ingredient {
     //REQUIRES: quantity >= 0
     //MODIFIES: this
     //EFFECTS: sets quantity
-    public void setQuantity(int quantity) throws QuantityException {
+    public void setQuantity(double quantity) throws QuantityException {
         if (quantity < 0) {
             throw new QuantityException("Amount must be greater than or equal to 0.");
         }

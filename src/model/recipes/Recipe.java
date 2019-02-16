@@ -1,15 +1,17 @@
 package model.recipes;
 
+import model.ingredients.GroceryCategory;
 import model.ingredients.Ingredient;
+import model.ingredients.Measurement;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Recipe {
-    String title;
-    int servings;
-    ArrayList<Ingredient> ingredients;
-    ArrayList<String> steps;
+    private String title;
+    private int servings;
+    private ArrayList<Ingredient> ingredients;
+    private ArrayList<String> steps;
 
     public Recipe (String title) {
         this.title = title;
@@ -46,7 +48,6 @@ public class Recipe {
                 stepByStepInput(input);
             }
         }
-
     }
 
     //MODIFIES: this
@@ -105,9 +106,7 @@ public class Recipe {
     public static void main(String[] args) {
         Recipe r = new Recipe("title");
         r.launchStepsGetter();
-        r.addIngredient(new Produce("Carrots", 3));
-        r.addIngredient(new Produce("Beets", 3));
-        r.addIngredient(new Produce("Potatoes", 3));
+        r.addIngredient(new Ingredient("carrot", GroceryCategory.PRODUCE, 1, Measurement.NONE));
         System.out.println(r.ingredientsToPrint());
         System.out.println(r.stepsToPrint());
         System.out.println(r.recipeToPrint());

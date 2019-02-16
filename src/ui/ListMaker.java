@@ -51,26 +51,32 @@ public class ListMaker {
     //REQUIRES: ingredientParts[1] is one of "protein", "dairy", "produce", or "pantry
     //EFFECTS: make an ingredient from information from ingredientParts
     public Ingredient makeIngredient(String[] ingredientParts) throws InvalidTypeException, NumberFormatException {
+        GroceryCategory groceryCategory;
 
         if (ingredientParts[2].matches("[a-zAz]*")) {
             throw new NumberFormatException("Please enter a valid number.");
         }
-
         String type = ingredientParts[1];
-        int quantity = Integer.valueOf(ingredientParts[2]);
+        double quantity = Integer.valueOf(ingredientParts[2]);
         String name = ingredientParts[0];
 
+
+
         if (type.equalsIgnoreCase("protein")) {
-            return new Protein(name, quantity);
+            groceryCategory = GroceryCategory.PROTEIN;
         } else if (type.equalsIgnoreCase("dairy")) {
-            return new Dairy(name, quantity);
+            groceryCategory = GroceryCategory.DAIRY;
         } else if (type.equalsIgnoreCase("produce")) {
-            return new Produce(name, quantity);
-        } else if (type.equalsIgnoreCase("pantry")) {
-            return new Pantry(name, quantity);
+            groceryCategory = GroceryCategory.PRODUCE;
+        } else if (type.equalsIgnoreCase("baking")) {
+            groceryCategory = GroceryCategory.PANTRY_BAKING;
+        } else if (type.equalsIgnoreCase("dried goods")) {
+            groceryCategory = GroceryCategory.DRIED_GOODS;
         } else {
             throw new InvalidTypeException("That's not a valid food type");
         }
+
+        return new Ingredient(name, groceryCategory, quantity, Measurement.NONE);
 
     }
 

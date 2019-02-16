@@ -14,12 +14,12 @@ public enum GroceryCategory {
         this.description = description;
     }
 
-    // EFFECTS: returns description of Status
+    // EFFECTS: returns description of GroceryCategory
     public String getDescription() {
         return description;
     }
 
-    // EFFECTS: returns description of Status
+    // EFFECTS: returns description of GroceryCategory
     @Override
     public String toString() {
         return description;
