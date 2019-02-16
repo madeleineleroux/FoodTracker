@@ -9,6 +9,7 @@ public class Ingredient {
     private GroceryCategory category;
     private Measurement measurement;
     private LocalDate purchaseDate;
+    private int lifespan;
     // Days in lifespan
     private int DEFAULT_LIFESPAN = 5;
     private String name;
