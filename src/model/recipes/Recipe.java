@@ -1,7 +1,6 @@
 package model.recipes;
 
 import model.ingredients.Ingredient;
-import model.ingredients.Produce;
 
 import java.util.ArrayList;
 import java.util.Scanner;

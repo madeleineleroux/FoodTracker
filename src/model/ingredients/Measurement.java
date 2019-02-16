@@ -1,16 +1,15 @@
 package model.ingredients;
 
-public enum GroceryType {
-    PRODUCE("PRODUCE"),
-    PROTEIN("PROTEIN"),
-    DAIRY("DAIRY"),
-    PANTRY_BAKING("PANTRY"),
-    DRIED_GOODS("DRIED GOODS");
+public enum Measurement {
+    NONE(""),
+    TBSP("tbsp"),
+    TSP("tsp"),
+    CUP("cup");
 
     private String description;
 
-    // EFFECTS: sets description of Status
-    GroceryType(String description) {
+    // EFFECTS: sets description of Measurement
+    Measurement (String description) {
         this.description = description;
     }
 

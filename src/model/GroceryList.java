@@ -2,7 +2,6 @@ package model;
 
 import model.exceptions.QuantityException;
 import model.ingredients.Ingredient;
-import model.ingredients.Produce;
 
 import java.util.ArrayList;
 

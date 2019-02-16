@@ -4,31 +4,30 @@ import model.exceptions.QuantityException;
 
 import java.time.LocalDate;
 
-public abstract class Ingredient {
-    protected int quantity;
-    protected LocalDate purchaseDate;
+public class Ingredient {
+    private double quantity;
+    private GroceryCategory category;
+    private Measurement measurement;
+    private LocalDate purchaseDate;
     // Days in lifespan
-    protected int DEFAULT_LIFESPAN = 5;
-    protected String name;
-    protected LocalDate expiryDate;
-    protected boolean purchased;
+    private int DEFAULT_LIFESPAN = 5;
+    private String name;
+    private LocalDate expiryDate;
+    private boolean purchased;
 
-    // Stores purchase date, expiry date, quantity, and name
+    // Stores purchase date, expiry date, category, quantity, and name
 
-    public Ingredient(String name, int quantity) {
+    public Ingredient(String name, GroceryCategory category, double quantity, Measurement measurement) {
         this.name = name;
+        this.category = category;
         this.quantity = quantity;
+        this.measurement = measurement;
         this.purchased = false;
     }
 
 
     public boolean equals(Ingredient other) {
         return other.getClass() == this.getClass() && getName().equalsIgnoreCase(other.getName());
-    }
-
-    //EFFECTS: sets quantity to zero
-    protected void resetQuantity() {
-        quantity = 0;
     }
 
 
@@ -39,6 +38,7 @@ public abstract class Ingredient {
         purchaseDate = LocalDate.now();
         setExpiryDate(purchaseDate);
     }
+
     //MODIFIES: this
     //EFFECTS: sets Ingredient's purchase date today, and corresponding expiry date
     public void purchase(LocalDate date) {

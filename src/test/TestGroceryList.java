@@ -2,7 +2,6 @@ package test;
 
 import model.GroceryList;
 import model.ingredients.Ingredient;
-import model.ingredients.Produce;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
