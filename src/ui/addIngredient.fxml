@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="722.0" style="-fx-background-color: FFFFFA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AddIngredientController">
+   <children>
+      <VBox prefHeight="511.0" prefWidth="275.0" style="-fx-background-color: #2C363F;">
+         <children>
+            <Button fx:id="recipeIndex" mnemonicParsing="false" onMouseClicked="#goToIndex" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Recipe Index" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="100.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="addRecipe" mnemonicParsing="false" onMouseClicked="#addingRecipe" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Add a Recipe" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="currentInventory" mnemonicParsing="false" onMouseClicked="#goToInventory" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Current Inventory" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="checklist" mnemonicParsing="false" onAction="#goToChecklist" onMouseClicked="#goToInventory" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Checklist" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="275.0" prefHeight="511.0" prefWidth="447.0" style="-fx-background-color: #FFFFFA;">
+         <children>
+            <Button fx:id="PRODUCE" layoutX="170.0" layoutY="170.0" mnemonicParsing="false" onAction="#addProduce" style="-fx-background-color: #2C363F; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Produce" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="PROTEIN" layoutX="315.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addProtein" prefWidth="99.0" style="-fx-background-color: #2C363F; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Protein" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="DAIRY" layoutX="34.0" layoutY="170.0" mnemonicParsing="false" onAction="#addDairy" prefWidth="99.0" style="-fx-background-color: #2C363F; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Dairy" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="BAKING" layoutX="102.0" layoutY="237.0" mnemonicParsing="false" onAction="#addBaking" prefWidth="99.0" style="-fx-background-color: #2C363F; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Baking" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="PANTRY" layoutX="248.0" layoutY="237.0" mnemonicParsing="false" onAction="#addPantry" prefWidth="99.0" style="-fx-background-color: #2C363F; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Pantry" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Slider fx:id="QUANTITY" onMouseReleased="#setQuantity" blockIncrement="1.0" layoutX="49.0" layoutY="357.0" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragOver="#setQuantity" opacity="0.33" prefHeight="16.0" prefWidth="331.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="-fx-border-radius: 10px; -fx-outline: none; -fx-background-color: #FFFFFA;" />
+            <TextField fx:id="input" layoutX="47.0" layoutY="65.0" opacity="0.59" prefHeight="27.0" prefWidth="353.0">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="addToGroceryList" layoutX="117.0" layoutY="430.0" mnemonicParsing="false" onAction="#addToList" style="-fx-background-color: #2C363F; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Add to Grocery List" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

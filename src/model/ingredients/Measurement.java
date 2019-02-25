@@ -1,6 +1,8 @@
 package model.ingredients;
 
-public enum Measurement {
+import java.io.Serializable;
+
+public enum Measurement implements Serializable {
     NONE(""),
     TBSP("tbsp"),
     TSP("tsp"),

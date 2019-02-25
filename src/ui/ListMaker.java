@@ -1,15 +1,16 @@
 package ui;
 
-import model.GroceryList;
 import model.exceptions.InvalidTypeException;
+import model.exceptions.QuantityException;
 import model.ingredients.*;
+import model.inventories.GroceryInventory;
 
 import java.util.Scanner;
 
 public class ListMaker {
-    GroceryList gl;
+    GroceryInventory gl;
     public ListMaker() {
-        gl = new GroceryList();
+        gl = new GroceryInventory();
     }
 
     //EFFECTS: reads a line fo text from standard input and returns it
@@ -84,7 +85,7 @@ public class ListMaker {
     //EFFECTS: prints out checklist choices
     public void menu() {
         System.out.println("Here's what's on your list: ");
-        System.out.println(gl.toPrint());
+        System.out.println(gl.toString());
         System.out.println("\ta: to add an item\n" +
                 "\tr: to remove an item\n" +
                 "\tc: to check off on item\n" +
@@ -96,7 +97,7 @@ public class ListMaker {
     //MODIFIES: gl
     //EFFECTS: removes item from gl at given checklist index
     public void removeFromChecklist() {
-        if (gl.getItems().isEmpty()) {
+        if (gl.getInventory().isEmpty()) {
             System.out.println("There's nothing to remove.");
         } else {
             System.out.println("What item number would you like to remove?");
@@ -104,7 +105,7 @@ public class ListMaker {
             int input = scanner.nextInt();
 
             try{
-                gl.removeItem(input - 1);
+                gl.removeIngredient(input - 1);
                 System.out.println("Item has been removed.");
             } catch (IndexOutOfBoundsException e) {
                 System.out.println("That's not a valid number index.");
@@ -118,7 +119,7 @@ public class ListMaker {
     //REQUIRES: the given index to be valid
     //MODIFIES: gl and ingredient at given index
     public void checkOff() {
-        if (gl.getItems().isEmpty()) {
+        if (gl.getInventory().isEmpty()) {
             System.out.println("There's nothing to checkoff!");
         } else {
             System.out.println("What have you purchased?");
@@ -126,13 +127,13 @@ public class ListMaker {
             int input = scanner.nextInt();
             input--;
 
-            if (input < 0 || input >= gl.getItems().size()) {
+            if (input < 0 || input >= gl.getInventory().size()) {
                 System.out.println("That's not a valid index.");
                 checkOff();
             }
-            Ingredient itemToPurchase = gl.getItems().get(input);
+            Ingredient itemToPurchase = gl.getInventory().get(input);
             itemToPurchase.purchase();
-            gl.removeItem(input);
+            gl.removeIngredient(input);
 
             System.out.println("Item has been purchased.");
         }
@@ -147,7 +148,7 @@ public class ListMaker {
         Scanner scanner = new Scanner(System.in);
         String answer = scanner.nextLine();
         if (answer.equalsIgnoreCase("y")) {
-            gl.clearList();
+            gl.clearInventory();
             System.out.println("List erased.");
         } else {
             System.out.println("List not erased");
@@ -158,12 +159,14 @@ public class ListMaker {
     public void chooseAction(String input) {
         if (input.equalsIgnoreCase("a")) {
             try {
-                gl.addToList(getIngredient());
+                gl.add(getIngredient());
             } catch (InvalidTypeException invalidType) {
                 System.out.println("Sorry. That wasn't a valid food type. Try again.");
             } catch (NumberFormatException invalidType) {
                 System.out.println("You didn't enter a valid number.");
-            }
+        } catch (QuantityException invalidType) {
+            System.out.println("You didn't enter a valid number.");
+        }
 
         } else if (input.equalsIgnoreCase("r")) {
             removeFromChecklist();

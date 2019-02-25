@@ -1,10 +1,9 @@
 package model.ingredients;
 
-import model.exceptions.QuantityException;
-
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Ingredient {
+public class Ingredient implements Serializable {
     private double quantity;
     private GroceryCategory category;
     private Measurement measurement;
@@ -27,8 +26,8 @@ public class Ingredient {
 
 
     public boolean equals(Ingredient other) {
-        return other.getClass() == this.getClass() && getName().equalsIgnoreCase(other.getName())
-                && getCategory().toString().equals(other.getCategory().toString());
+        return getName().equalsIgnoreCase(other.getName());
+                //&& getCategory().toString().equals(other.getCategory().toString());
     }
 
     //EFFECTS: returns category
@@ -96,21 +95,14 @@ public class Ingredient {
     //REQUIRES: 0 >= amount <= current quantity
     //MODIFIES: this
     //EFFECTS: removes quantity amount from ingredient
-    public void removeQuantity(double amount) throws QuantityException {
-        if ((quantity -= amount) <= 0 || amount > getQuantity()) {
-            throw new QuantityException("You can't remove that much.");
-        }
-
+    public void removeQuantity(double amount) {
         quantity -= amount;
     }
 
     //REQUIRES: amount >= 0
     //MODIFIES: this
     //EFFECTS: adds amount to quantity
-    public void addToQuantity(double amount) throws QuantityException {
-        if (amount < 0) {
-            throw new QuantityException("Amount must be greater or equal to 0");
-        }
+    public void addToQuantity(double amount) {
         quantity += amount;
     }
 
@@ -133,10 +125,7 @@ public class Ingredient {
     //REQUIRES: quantity >= 0
     //MODIFIES: this
     //EFFECTS: sets quantity
-    public void setQuantity(double quantity) throws QuantityException {
-        if (quantity < 0) {
-            throw new QuantityException("Amount must be greater than or equal to 0.");
-        }
+    public void setQuantity(double quantity){
         this.quantity = quantity;
     }
 

@@ -3,10 +3,14 @@ package model.inventories;
 import model.exceptions.QuantityException;
 import model.ingredients.Ingredient;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public abstract class Inventory {
-    static ArrayList<Ingredient> inventory;
+public abstract class Inventory implements Storage {
+    protected ArrayList<Ingredient> inventory;
+    protected String FILENAME;
 
     public Inventory() {
         inventory = new ArrayList<>();
@@ -17,16 +21,26 @@ public abstract class Inventory {
         return inventory;
     }
 
+    private void outputStream() {
+        try {
+            ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(FILENAME));
+            os.writeObject(getInventory());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     //MODIFIES: this
     //EFFECTS: empties inventory
     public void clearInventory() {
         inventory.clear();
+        outputStream();
     }
 
     //REQUIRES: ingredient must not be null
     //MODIFIES: this
     //EFFECTS: adds Ingredient to inventory, if already in inventory adds to the quantity
-    public void add(Ingredient ingredient) throws QuantityException {
+    public void add(Ingredient ingredient) throws QuantityException{
         boolean found = false;
 
         for (Ingredient i : inventory) {
@@ -39,6 +53,8 @@ public abstract class Inventory {
         if (!found) {
             inventory.add(ingredient);
         }
+
+        outputStream();
     }
 
     //REQUIRES: input must not be null
@@ -54,6 +70,8 @@ public abstract class Inventory {
             }
             index++;
         }
+
+        outputStream();
     }
 
     //REQUIRES: input must not be null
@@ -61,6 +79,7 @@ public abstract class Inventory {
     //EFFECTS: remove the ingredient entry with the same name as input
     public void removeIngredient(int index) {
         inventory.remove(index);
+        outputStream();
     }
 
     //EFFECTS: prints a list of all items in inventory

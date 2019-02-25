@@ -1,6 +1,8 @@
 package model.ingredients;
 
-public enum GroceryCategory {
+import java.io.Serializable;
+
+public enum GroceryCategory implements Serializable {
     PRODUCE("PRODUCE"),
     PROTEIN("PROTEIN"),
     DAIRY("DAIRY"),
