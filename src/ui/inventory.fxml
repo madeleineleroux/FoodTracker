@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="722.0" style="-fx-background-color: FFFFFA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.InventoryController">
+   <children>
+      <VBox prefHeight="511.0" prefWidth="275.0" style="-fx-background-color: #2C363F;">
+         <children>
+            <Button fx:id="recipeIndex" mnemonicParsing="false" onAction="#goToRecipeIndex" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Recipe Index" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="100.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="addIngredient" mnemonicParsing="false" onAction="#addingIngredient" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Add an Ingredient" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="addRecipe" mnemonicParsing="false" onAction="#goToAddRecipe" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Add a Recipe" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="checklist" mnemonicParsing="false" onAction="#goToMain" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Checklist" textFill="#fffffa">
+               <font>
+                  <Font name="Times Roman" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="body" layoutX="496.0" layoutY="256.0" prefHeight="511.0" prefWidth="453.0" />
+      <ListView fx:id="inventoryView" layoutX="301.0" layoutY="57.0" prefHeight="398.0" prefWidth="391.0" style="-fx-background-color: #FFFFFA;">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </ListView>
+   </children>
+</AnchorPane>

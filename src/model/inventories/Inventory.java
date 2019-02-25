@@ -9,11 +9,12 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 public abstract class Inventory implements Storage {
-    protected ArrayList<Ingredient> inventory;
+    protected static ArrayList<Ingredient> inventory = new ArrayList<>();
     protected String FILENAME;
 
     public Inventory() {
-        inventory = new ArrayList<>();
+
+        //inventory = new ArrayList<>();
     }
 
     //EFFECTS: returns inventory

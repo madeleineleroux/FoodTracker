@@ -73,22 +73,6 @@ public class testGroceryInventory {
     }
 
     @Test
-    public void testInKitchenMulti() {
-        try {
-            KitchenInventory k = new KitchenInventory();
-            Ingredient i = new Ingredient("carrot", GroceryCategory.PRODUCE, 3, Measurement.NONE);
-            k.add(i);
-            gl.add(i);
-            gl.add(i);
-            assertTrue(gl.getKitchenInventory().isEmpty());
-            assertEquals(1, gl.getInventory().size());
-            assertEquals(3, gl.getInventory().get(0).getQuantity());
-        } catch (QuantityException e) {
-            fail();
-        }
-    }
-
-    @Test
     public void testInKitchenMulti2() {
         try {
             KitchenInventory k = new KitchenInventory();

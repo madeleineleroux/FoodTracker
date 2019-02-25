@@ -10,10 +10,11 @@ import java.util.ArrayList;
 
 public class GroceryInventory extends Inventory implements Serializable {
     private KitchenInventory kitchen = new KitchenInventory();
+    private static ArrayList<Ingredient> inventory = new ArrayList<>();
 
 
     public GroceryInventory() {
-        super();
+        this.inventory = Inventory.inventory;
         this.FILENAME = "groceryList.ser";
 
         try {

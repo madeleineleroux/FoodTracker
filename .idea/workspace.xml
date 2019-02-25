@@ -1,45 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe60248e-7f56-4220-9dc6-847388d371f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/inventories/Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/AddIngredientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/MainUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/addIngredient.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/addRecipeIngredients.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/checklistGui.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/recipeIndex.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+    <list default="true" id="fe60248e-7f56-4220-9dc6-847388d371f7" name="Default Changelist" comment="Working on fixing Seriaziable bugs">
+      <change afterPath="$PROJECT_DIR$/src/ui/InventoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/GroceryInventory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/GroceryList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/IngredientStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/Inventory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/KitchenInventory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/RecipeIngredients.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredients/GroceryCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredients/GroceryCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredients/Ingredient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredients/Ingredient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredients/Measurement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/model/ingredients/Measurement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/test/TestGroceryList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/test/testRecipe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/ui/ListMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FoodTracker/ui/ListMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/ui/test/TestListMaker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/GroceryList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/IngredientStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ingredients/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ingredients/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ingredients/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ingredients/Measurement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ingredients/test/testIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ingredients/test/testIngredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FoodTracker/ui/ListMaker.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/inventories/GroceryInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/inventories/GroceryInventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/inventories/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/inventories/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/inventories/KitchenInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/inventories/KitchenInventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/inventories/RecipeIngredients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/inventories/RecipeIngredients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/inventories/test/testKitchenInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/inventories/test/testKitchenInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/inventories/test/testRecipeIngredients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/inventories/test/testRecipeIngredients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/ListMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ListMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/test/TestListMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/test/TestListMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/checklistGui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/inventory.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,9 +48,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="fxml" value="14" />
+          <entry key="fxml" value="23" />
           <entry key="iml" value="1" />
-          <entry key="java" value="137" />
+          <entry key="java" value="164" />
           <entry key="log" value="1" />
         </counts>
       </usages-collector>
@@ -85,35 +58,35 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="137" />
+          <entry key="JAVA" value="164" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="14" />
+          <entry key="XML" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="93" />
-          <entry key="fxml" value="95" />
-          <entry key="java" value="29426" />
-          <entry key="txt" value="22" />
+          <entry key="fxml" value="122" />
+          <entry key="java" value="30673" />
+          <entry key="txt" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="29426" />
-          <entry key="PLAIN_TEXT" value="115" />
-          <entry key="XML" value="95" />
+          <entry key="JAVA" value="30673" />
+          <entry key="PLAIN_TEXT" value="149" />
+          <entry key="XML" value="122" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/inventories/KitchenInventory.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/inventories/GroceryInventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="148">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,16 +95,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/inventories/GroceryInventory.java">
+        <entry file="file://$PROJECT_DIR$/src/model/inventories/KitchenInventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+            <state relative-caret-position="108">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,10 +119,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/inventories/Inventory.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
+            <state relative-caret-position="118">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/ingredients/Ingredient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,10 +143,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/InventoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="210">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,8 +160,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -200,8 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/IngredientList.java" />
-        <option value="$PROJECT_DIR$/src/model/exceptions/quantityException.java" />
         <option value="$PROJECT_DIR$/src/model/Produce.java" />
         <option value="$PROJECT_DIR$/src/model/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/model/ingredientTypes/Dairy.java" />
@@ -224,12 +206,10 @@
         <option value="$PROJECT_DIR$/src/model/GroceryInventory.java" />
         <option value="$PROJECT_DIR$/src/model/KitchenInventory.java" />
         <option value="$PROJECT_DIR$/src/model/RecipeIngredients.java" />
-        <option value="$PROJECT_DIR$/src/model/inventories/RecipeIngredients.java" />
         <option value="$PROJECT_DIR$/src/model/inventories/test/testRecipeIngredients.java" />
         <option value="$PROJECT_DIR$/src/model/inventories/Storage.java" />
         <option value="$PROJECT_DIR$/src/ui/test/TestListMaker.java" />
         <option value="$PROJECT_DIR$/src/model/ingredients/test/testIngredient.java" />
-        <option value="$PROJECT_DIR$/src/ui/ListMaker.java" />
         <option value="$PROJECT_DIR$/src/ui/FoodTrackerUI.java" />
         <option value="$PROJECT_DIR$/src/ui/sample.fxml" />
         <option value="$PROJECT_DIR$/src/ui/gui.fxml" />
@@ -238,19 +218,23 @@
         <option value="$PROJECT_DIR$/src/ui/addRecipeIngredients.fxml" />
         <option value="$PROJECT_DIR$/src/ui/AddIngredient.java" />
         <option value="$PROJECT_DIR$/src/ui/Controller.java" />
-        <option value="$PROJECT_DIR$/src/ui/mainGui.fxml" />
         <option value="$PROJECT_DIR$/src/ui/addIngredient.fxml" />
         <option value="$PROJECT_DIR$/src/ui/MainUI.java" />
-        <option value="$PROJECT_DIR$/src/ui/MainController.java" />
-        <option value="$PROJECT_DIR$/src/ui/AddIngredientController.java" />
-        <option value="$PROJECT_DIR$/src/model/ingredients/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/model/ingredients/Measurement.java" />
         <option value="$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java" />
         <option value="$PROJECT_DIR$/src/model/inventories/test/testKitchenInventory.java" />
-        <option value="$PROJECT_DIR$/src/model/inventories/Inventory.java" />
         <option value="$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java" />
+        <option value="$PROJECT_DIR$/src/model/inventories/RecipeIngredients.java" />
+        <option value="$PROJECT_DIR$/src/ui/mainGui.fxml" />
+        <option value="$PROJECT_DIR$/src/ui/inventory.fxml" />
+        <option value="$PROJECT_DIR$/src/ui/AddIngredientController.java" />
         <option value="$PROJECT_DIR$/src/model/inventories/GroceryInventory.java" />
+        <option value="$PROJECT_DIR$/src/model/inventories/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/ui/ListMaker.java" />
+        <option value="$PROJECT_DIR$/src/ui/MainController.java" />
+        <option value="$PROJECT_DIR$/src/ui/InventoryController.java" />
         <option value="$PROJECT_DIR$/src/model/inventories/KitchenInventory.java" />
+        <option value="$PROJECT_DIR$/src/model/ingredients/Ingredient.java" />
       </list>
     </option>
   </component>
@@ -289,14 +273,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="ingredients" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FoodTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FoodTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="ingredients" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FoodTracker" type="b2602c69:ProjectViewProjectNode" />
@@ -360,13 +336,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GroceryInventory">
-    <configuration name="GroceryInventory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.inventories.GroceryInventory" />
+  <component name="RunManager" selected="Application.MainUI">
+    <configuration name="Ingredient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.ingredients.Ingredient" />
       <module name="FoodTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.inventories.*" />
+          <option name="PATTERN" value="model.ingredients.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -374,12 +350,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KitchenInventory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.inventories.KitchenInventory" />
+    <configuration name="MainUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.MainUI" />
       <module name="FoodTracker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.inventories.*" />
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -387,7 +363,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testGroceryInventory.testInKitchen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testGroceryInventory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodTracker" />
       <extension name="coverage">
         <pattern>
@@ -397,8 +373,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="model.inventories.test" />
       <option name="MAIN_CLASS_NAME" value="model.inventories.test.testGroceryInventory" />
-      <option name="METHOD_NAME" value="testInKitchen" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -419,7 +393,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testGroceryInventory.testNotInKitchenDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testRecipeIngredients" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodTracker" />
       <extension name="coverage">
         <pattern>
@@ -428,27 +402,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model.inventories.test" />
-      <option name="MAIN_CLASS_NAME" value="model.inventories.test.testGroceryInventory" />
-      <option name="METHOD_NAME" value="testNotInKitchenDouble" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="model.inventories.test.testRecipeIngredients" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.testGroceryInventory.testNotInKitchenDouble" />
-      <item itemvalue="JUnit.testGroceryInventory.testInKitchen" />
+      <item itemvalue="JUnit.testGroceryInventory" />
+      <item itemvalue="JUnit.testRecipeIngredients" />
       <item itemvalue="JUnit.testGroceryInventory.testInKitchenMulti" />
-      <item itemvalue="Application.GroceryInventory" />
-      <item itemvalue="Application.KitchenInventory" />
+      <item itemvalue="Application.MainUI" />
+      <item itemvalue="Application.Ingredient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GroceryInventory" />
-        <item itemvalue="Application.KitchenInventory" />
+        <item itemvalue="Application.MainUI" />
+        <item itemvalue="JUnit.testGroceryInventory" />
+        <item itemvalue="Application.Ingredient" />
+        <item itemvalue="JUnit.testRecipeIngredients" />
         <item itemvalue="JUnit.testGroceryInventory.testInKitchenMulti" />
-        <item itemvalue="JUnit.testGroceryInventory.testInKitchen" />
-        <item itemvalue="JUnit.testGroceryInventory.testNotInKitchenDouble" />
       </list>
     </recent_temporary>
   </component>
@@ -467,53 +439,59 @@
       <option name="project" value="LOCAL" />
       <updated>1550351280851</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working on fixing Seriaziable bugs">
+      <created>1551130195722</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551130195722</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testGroceryInventory_testInKitchenMulti - 2019.02.25 at 11h 24m 11s.xml">
+    <history-entry file="testGroceryInventory_testInKitchenMulti - 2019.02.25 at 14h 01m 09s.xml">
       <configuration name="testGroceryInventory.testInKitchenMulti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testGroceryInventory - 2019.02.25 at 11h 27m 21s.xml">
+    <history-entry file="testGroceryInventory - 2019.02.25 at 14h 01m 38s.xml">
       <configuration name="testGroceryInventory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testGroceryInventory_testNotInKitchenDouble - 2019.02.25 at 11h 28m 48s.xml">
-      <configuration name="testGroceryInventory.testNotInKitchenDouble" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testGroceryInventory - 2019.02.25 at 11h 29m 12s.xml">
+    <history-entry file="testGroceryInventory - 2019.02.25 at 14h 01m 51s.xml">
       <configuration name="testGroceryInventory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testGroceryInventory - 2019.02.25 at 11h 29m 15s.xml">
+    <history-entry file="testRecipeIngredients - 2019.02.25 at 14h 05m 56s.xml">
+      <configuration name="testRecipeIngredients" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testRecipeIngredients - 2019.02.25 at 14h 08m 38s.xml">
+      <configuration name="testRecipeIngredients" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testGroceryInventory - 2019.02.25 at 14h 42m 47s.xml">
       <configuration name="testGroceryInventory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testGroceryInventory_testNotInKitchen - 2019.02.25 at 11h 29m 36s.xml">
-      <configuration name="testGroceryInventory.testNotInKitchen" configurationId="JUnit" />
+    <history-entry file="testGroceryInventory - 2019.02.25 at 14h 43m 29s.xml">
+      <configuration name="testGroceryInventory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testGroceryInventory_testNotInKitchenDouble - 2019.02.25 at 11h 29m 42s.xml">
-      <configuration name="testGroceryInventory.testNotInKitchenDouble" configurationId="JUnit" />
+    <history-entry file="testGroceryInventory - 2019.02.25 at 15h 28m 39s.xml">
+      <configuration name="testGroceryInventory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testGroceryInventory_testInKitchen - 2019.02.25 at 12h 00m 20s.xml">
-      <configuration name="testGroceryInventory.testInKitchen" configurationId="JUnit" />
+    <history-entry file="testGroceryInventory - 2019.02.25 at 15h 29m 49s.xml">
+      <configuration name="testGroceryInventory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testGroceryInventory_testNotInKitchen - 2019.02.25 at 12h 00m 20s.xml">
-      <configuration name="testGroceryInventory.testNotInKitchen" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testGroceryInventory_testNotInKitchenDouble - 2019.02.25 at 12h 00m 20s.xml">
-      <configuration name="testGroceryInventory.testNotInKitchenDouble" configurationId="JUnit" />
+    <history-entry file="testGroceryInventory - 2019.02.25 at 15h 30m 04s.xml">
+      <configuration name="testGroceryInventory" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="798" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26638478" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26638478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499226" weight="0.32796487" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4924812" visible="true" weight="0.27818447" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924812" weight="0.3977695" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4924812" visible="true" weight="0.27818447" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924812" weight="0.3967789" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -522,7 +500,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.38945827" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50751877" side_tool="true" weight="0.27818447" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49624062" weight="0.32589838" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49624062" weight="0.32503662" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -557,25 +535,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating enum classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating enum classes" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java</url>
-          <line>68</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Working on fixing Seriaziable bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on fixing Seriaziable bugs" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/model/Pantry.java" />
@@ -621,13 +582,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestGroceryList.java" />
     <entry file="file://$PROJECT_DIR$/src/model/GroceryList.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/inventories/RecipeIngredients.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar!/org/junit/jupiter/api/Assertions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -643,16 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/inventories/Storage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/exceptions/QuantityException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -664,6 +608,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -675,14 +622,6 @@
           <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/checklistGui.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/gui.fxml" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
@@ -707,26 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ListMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/addIngredient.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="66" selection-start-line="89" selection-start-column="66" selection-end-line="89" selection-end-column="66" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/addRecipeIngredients.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -735,76 +654,10 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/MainUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/mainGui.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-869">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/AddIngredientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
-            <element signature="e#2079#2080#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1950#1951#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#2154#2155#0" expanded="true" />
-            <element signature="e#2804#2805#0" expanded="true" />
-            <element signature="e#2843#2844#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ingredients/Measurement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ingredients/Ingredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3268#3269#0" expanded="true" />
-            <element signature="e#3295#3296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/inventories/test/testRecipeIngredients.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -815,20 +668,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/inventories/Inventory.java">
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/Storage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="-109">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -842,10 +688,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java">
+    <entry file="file://$PROJECT_DIR$/src/model/ingredients/GroceryCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="120">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/test/testRecipeIngredients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/RecipeIngredients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/inventory.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/checklistGui.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/addIngredient.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/mainGui.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/AddIngredientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ListMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="135" column="15" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/InventoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/KitchenInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -854,22 +796,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/inventories/GroceryInventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        <state relative-caret-position="148">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/inventories/KitchenInventory.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/MainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="236">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/inventories/test/testGroceryInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ingredients/Ingredient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
