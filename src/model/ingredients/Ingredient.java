@@ -33,6 +33,10 @@ public class Ingredient implements Serializable {
                 //&& getCategory().toString().equals(other.getCategory().toString());
     }
 
+    public String toString() {
+        return getName();
+    }
+
     //EFFECTS: returns category
     public GroceryCategory getCategory(){
         return category;
@@ -45,6 +49,10 @@ public class Ingredient implements Serializable {
     //EFFECTS: sets measure
     public void setMeasurement(Measurement measurement) {
         this.measurement = measurement;
+    }
+
+    public String sayHi(){
+        return "ji";
     }
 
     //MODIFIES: this

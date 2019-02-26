@@ -1,7 +1,9 @@
 package model.inventories;
 
 import model.exceptions.QuantityException;
+import model.ingredients.GroceryCategory;
 import model.ingredients.Ingredient;
+import model.ingredients.Measurement;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -15,6 +17,7 @@ public class KitchenInventory implements Serializable, Storage {
         try {
             ObjectInputStream is = new ObjectInputStream (new FileInputStream(FILENAME));
             this.inventory = (ArrayList<Ingredient>) ((ObjectInputStream) is).readObject();
+            System.out.println(toString());
         } catch (Exception e) {
             System.out.println("There wasn't a file");
             e.printStackTrace();
@@ -88,5 +91,11 @@ public class KitchenInventory implements Serializable, Storage {
             printString += (i.getName() + ": " + (int) i.getQuantity() + "\n");
         }
         return printString;
+    }
+
+    public static void main(String[] args) throws Exception {
+        KitchenInventory k = new KitchenInventory();
+        Ingredient i = new Ingredient("carrot", GroceryCategory.PRODUCE, 3, Measurement.NONE);
+        k.add(i);
     }
 }

@@ -17,12 +17,12 @@ public class GroceryInventory extends Inventory implements Serializable {
         this.FILENAME = "groceryList.ser";
 
         try {
-            ObjectInputStream is = new ObjectInputStream (new FileInputStream(FILENAME));
+            ObjectInputStream is = new ObjectInputStream(new FileInputStream(FILENAME));
             this.inventory = (ArrayList<Ingredient>) ((ObjectInputStream) is).readObject();
             //System.out.println(toString());
             //System.out.println(inventory.toString());
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("grocery list");
         }
     }
 
