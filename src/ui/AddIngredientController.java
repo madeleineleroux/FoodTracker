@@ -129,7 +129,7 @@ public class AddIngredientController implements Serializable {
         this.name = input.getText();
         Ingredient i = new Ingredient(name, category, quantity, Measurement.NONE);
         gl.add(i);
-        System.out.println(gl.toString());
+        //System.out.println(gl.toString());
     }
 
     public ArrayList<Ingredient> getChecklist() {

@@ -33,7 +33,7 @@ public class KitchenInventory implements Serializable, Storage {
         outputStream();
     }
 
-    private void outputStream() {
+    public void outputStream() {
         try {
             ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(FILENAME));
             os.writeObject(getInventory());

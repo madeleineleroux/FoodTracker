@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import model.exceptions.QuantityException;
 import model.ingredients.Ingredient;
 import model.inventories.GroceryInventory;
 
@@ -23,6 +24,7 @@ public class MainController implements Initializable {
         for (Ingredient i: gl.getInventory()) {
             checklistView.getItems().add(i.getQuantity() + " " + i.getName());
         }
+        System.out.println(gl.toString());
     }
 
     @FXML
@@ -80,15 +82,17 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    void purchaseItem(ActionEvent event) {
-
+    void purchaseItem(ActionEvent event) throws QuantityException {
+        int toPurchase = checklistView.getSelectionModel().getSelectedIndex();
+            gl.getInventory().get(toPurchase).purchase();
+            checklistView.getItems().remove(toPurchase);
     }
 
     @FXML
     void removeItem(ActionEvent event) {
         int toRemove = checklistView.getSelectionModel().getSelectedIndex();
-        System.out.println(toRemove);
-        AddIngredientController.gl.removeIngredient(toRemove);
+        checklistView.getItems().remove(toRemove);
+        gl.removeIngredient(toRemove);
 
     }
 

@@ -1,5 +1,8 @@
 package model.ingredients;
 
+import model.exceptions.QuantityException;
+import model.inventories.KitchenInventory;
+
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -44,13 +47,14 @@ public class Ingredient implements Serializable {
         this.measurement = measurement;
     }
 
-
     //MODIFIES: this
     //EFFECTS: sets Ingredient's purchase date today, and corresponding expiry date
-    public void purchase() {
+    public void purchase() throws QuantityException {
+        KitchenInventory ki = new KitchenInventory();
         purchased = true;
         purchaseDate = LocalDate.now();
         setExpiryDate(purchaseDate);
+        ki.add(this);
     }
 
     //MODIFIES: this

@@ -13,8 +13,7 @@ public abstract class Inventory implements Storage {
     protected String FILENAME;
 
     public Inventory() {
-
-        //inventory = new ArrayList<>();
+        inventory = new ArrayList<>();
     }
 
     //EFFECTS: returns inventory

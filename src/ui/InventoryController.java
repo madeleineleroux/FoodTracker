@@ -13,13 +13,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class InventoryController implements Initializable {
-    private KitchenInventory ki = new KitchenInventory();
+    private static KitchenInventory ki = new KitchenInventory();
 
     public void initialize(URL url, ResourceBundle rb) {
-        for (Ingredient i: AddIngredientController.gl.getInventory()) {
-            inventoryView.getItems().add(i.getQuantity() + " " + i.getName());
+        System.out.println(ki.toString());
+        for (Ingredient i: ki.getInventory()) {
+            inventoryView.getItems().add(i.getQuantity() + " " + i.getName()+ ", expires " );
         }
-
     }
 
     @FXML

@@ -10,16 +10,17 @@ import java.util.ArrayList;
 
 public class GroceryInventory extends Inventory implements Serializable {
     private KitchenInventory kitchen = new KitchenInventory();
-    private static ArrayList<Ingredient> inventory = new ArrayList<>();
+    //private static ArrayList<Ingredient> inventory = new ArrayList<>();
 
 
     public GroceryInventory() {
-        this.inventory = Inventory.inventory;
         this.FILENAME = "groceryList.ser";
 
         try {
             ObjectInputStream is = new ObjectInputStream (new FileInputStream(FILENAME));
             this.inventory = (ArrayList<Ingredient>) ((ObjectInputStream) is).readObject();
+            //System.out.println(toString());
+            //System.out.println(inventory.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
