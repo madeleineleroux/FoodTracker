@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -12,23 +13,8 @@
    <children>
       <VBox prefHeight="511.0" prefWidth="275.0" style="-fx-background-color: #2C363F;">
          <children>
-            <Button fx:id="recipeIndex" mnemonicParsing="false" onAction="#goToRecipeIndex" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Recipe Index" textFill="#fffffa">
-               <font>
-                  <Font name="Times Roman" size="20.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="10.0" top="100.0" />
-               </VBox.margin>
-            </Button>
+            <ImageView fitHeight="86.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
             <Button fx:id="addIngredient" mnemonicParsing="false" onAction="#addingIngredient" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Add an Ingredient" textFill="#fffffa">
-               <font>
-                  <Font name="Times Roman" size="20.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="10.0" />
-               </VBox.margin>
-            </Button>
-            <Button fx:id="addRecipe" mnemonicParsing="false" onAction="#goToAddRecipe" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Add a Recipe" textFill="#fffffa">
                <font>
                   <Font name="Times Roman" size="20.0" />
                </font>
@@ -46,11 +32,23 @@
             </Button>
          </children>
       </VBox>
-      <Pane fx:id="body" layoutX="496.0" layoutY="256.0" prefHeight="511.0" prefWidth="453.0" />
       <ListView fx:id="inventoryView" layoutX="301.0" layoutY="57.0" prefHeight="398.0" prefWidth="391.0" style="-fx-background-color: #FFFFFA;">
          <padding>
             <Insets top="10.0" />
          </padding>
       </ListView>
+      <Button fx:id="remove" layoutX="437.0" layoutY="453.0" mnemonicParsing="false" onAction="#removeItem" prefHeight="48.0" prefWidth="163.0" style="-fx-background-color: #2C363F; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Remove" textFill="#fffffa">
+         <font>
+            <Font name="Times Roman" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Button>
+      <Label layoutX="301.0" layoutY="22.0" text="Inventory" textFill="#2c363f">
+         <font>
+            <Font name="Times Roman" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

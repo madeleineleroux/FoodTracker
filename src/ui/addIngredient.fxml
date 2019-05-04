@@ -13,23 +13,8 @@
    <children>
       <VBox prefHeight="511.0" prefWidth="275.0" style="-fx-background-color: #2C363F;">
          <children>
-            <Button fx:id="recipeIndex" mnemonicParsing="false" onMouseClicked="#goToIndex" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Recipe Index" textFill="#fffffa">
-               <font>
-                  <Font name="Times Roman" size="20.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="10.0" top="100.0" />
-               </VBox.margin>
-            </Button>
-            <Button fx:id="addRecipe" mnemonicParsing="false" onMouseClicked="#addingRecipe" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Add a Recipe" textFill="#fffffa">
-               <font>
-                  <Font name="Times Roman" size="20.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="10.0" />
-               </VBox.margin>
-            </Button>
-            <Button fx:id="currentInventory" mnemonicParsing="false" onMouseClicked="#goToInventory" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Current Inventory" textFill="#fffffa">
+            <ImageView fitHeight="86.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="currentInventory" mnemonicParsing="false" onAction="#goToInventory" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Current Inventory" textFill="#fffffa">
                <font>
                   <Font name="Times Roman" size="20.0" />
                </font>
@@ -86,7 +71,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </Button>
-            <Slider fx:id="QUANTITY" onMouseReleased="#setQuantity" blockIncrement="1.0" layoutX="49.0" layoutY="357.0" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragOver="#setQuantity" opacity="0.33" prefHeight="16.0" prefWidth="331.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="-fx-border-radius: 10px; -fx-outline: none; -fx-background-color: #FFFFFA;" />
+            <Slider fx:id="QUANTITY" blockIncrement="1.0" layoutX="49.0" layoutY="357.0" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragOver="#setQuantity" onMouseReleased="#setQuantity" opacity="0.33" prefHeight="16.0" prefWidth="331.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" style="-fx-border-radius: 10px; -fx-outline: none; -fx-background-color: #FFFFFA;" />
             <TextField fx:id="input" layoutX="47.0" layoutY="65.0" opacity="0.59" prefHeight="27.0" prefWidth="353.0">
                <font>
                   <Font name="Times Roman" size="20.0" />

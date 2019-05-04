@@ -14,6 +14,7 @@ import model.ingredients.Ingredient;
 import model.ingredients.Measurement;
 import model.inventories.GroceryInventory;
 
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -25,13 +26,8 @@ public class AddIngredientController implements Serializable {
     private String name;
 
     @FXML
-    private Button addRecipe;
-
-    @FXML
     private Button currentInventory;
 
-    @FXML
-    private Button recipeIndex;
 
     @FXML
     private Button checklist;
@@ -64,19 +60,14 @@ public class AddIngredientController implements Serializable {
 
     private Button[] buttons = {DAIRY, PANTRY, PROTEIN, PRODUCE, BAKING};
 
-    @FXML
-    void goToIndex(ActionEvent event) {
-
-    }
 
     @FXML
-    void addingRecipe(ActionEvent event) {
-
-    }
-
-
-    @FXML
-    void goToInventory(ActionEvent event) {
+    void goToInventory(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("inventory.fxml"));
+        Scene scene = new Scene(root);
+        // Get the stage info, cast as a stage
+        Stage window = (Stage) ((javafx.scene.Node)event.getSource()).getScene().getWindow();
+        window.setScene(scene);
 
     }
 

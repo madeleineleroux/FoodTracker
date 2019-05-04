@@ -24,11 +24,7 @@ public class MainController implements Initializable {
         for (Ingredient i: gl.getInventory()) {
             checklistView.getItems().add(i.getQuantity() + " " + i.getName());
         }
-        System.out.println(gl.toString());
     }
-
-    @FXML
-    private Button addRecipe;
 
     @FXML
     private ListView checklistView;
@@ -48,16 +44,10 @@ public class MainController implements Initializable {
     @FXML
     private Button checklist;
 
-    @FXML
-    private Button recipeIndex;
 
     @FXML
     private Pane body;
 
-    @FXML
-    void goToIndex(ActionEvent event) {
-
-    }
 
     @FXML
     void fffffa(ActionEvent event) {
@@ -75,11 +65,6 @@ public class MainController implements Initializable {
 
     }
 
-
-    @FXML
-    void addingRecipe(ActionEvent event) {
-
-    }
 
     @FXML
     void purchaseItem(ActionEvent event) throws QuantityException {
@@ -106,16 +91,5 @@ public class MainController implements Initializable {
         window.setScene(scene);
 
     }
-
-
-//    @FXML
-//    void goToChecklist(ActionEvent event) throws Exception {
-//        Parent root = FXMLLoader.load(getClass().getResource("mainGui.fxml"));
-//        Scene scene = new Scene(root);
-//        // Get the stage info, cast as a stage
-//        Stage window = (Stage) ((javafx.scene.Node)event.getSource()).getScene().getWindow();
-//        window.setScene(scene);
-//
-//    }
 
 }

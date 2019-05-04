@@ -60,8 +60,7 @@ public class Ingredient implements Serializable {
     public void purchase() throws QuantityException {
         KitchenInventory ki = new KitchenInventory();
         purchased = true;
-        purchaseDate = LocalDate.now();
-        setExpiryDate(purchaseDate);
+        setExpiryDate(LocalDate.now());
         ki.add(this);
     }
 
@@ -103,6 +102,10 @@ public class Ingredient implements Serializable {
         purchaseDate = date;
     }
 
+    public LocalDate getPurchaseDate() {
+        return purchaseDate;
+    }
+
 
     //REQUIRES: 0 >= amount <= current quantity
     //MODIFIES: this
@@ -141,5 +144,23 @@ public class Ingredient implements Serializable {
         this.quantity = quantity;
     }
 
+    public String getExpiryDate() {
+        LocalDate today = LocalDate.now();
+        if (expiryDate.isBefore(today)) {
+            return "EXPIRED";
+        }
+        return "Expires " + expiryDate.toString();
+    }
 
+    public static void main(String[] args) throws Exception {
+        Ingredient i = new Ingredient("carrot", GroceryCategory.PRODUCE, 2, Measurement.NONE);
+        i.purchase();
+        System.out.println(i.getExpiryDate());
+        System.out.println(i.getPurchaseDate());
+    }
+
+//    public boolean isExpired() {
+//        LocalDate today = LocalDate.now();
+//        return expiryDate.isBefore(today);
+//    }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.*?>
@@ -10,23 +11,8 @@
    <children>
       <VBox prefHeight="511.0" prefWidth="275.0" style="-fx-background-color: #2C363F;">
          <children>
-            <Button fx:id="recipeIndex" mnemonicParsing="false" onMouseClicked="#goToIndex" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Recipe Index" textFill="#fffffa">
-               <font>
-                  <Font name="Times Roman" size="20.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="10.0" top="100.0" />
-               </VBox.margin>
-            </Button>
+            <ImageView fitHeight="86.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
             <Button fx:id="addIngredient" mnemonicParsing="false" onAction="#addingIngredient" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Add an Ingredient" textFill="#fffffa">
-               <font>
-                  <Font name="Times Roman" size="20.0" />
-               </font>
-               <VBox.margin>
-                  <Insets bottom="10.0" />
-               </VBox.margin>
-            </Button>
-            <Button fx:id="addRecipe" mnemonicParsing="false" onMouseClicked="#addingRecipe" prefHeight="27.0" prefWidth="281.0" style="-fx-background-color: #2C363F;" text="Add a Recipe" textFill="#fffffa">
                <font>
                   <Font name="Times Roman" size="20.0" />
                </font>
@@ -65,5 +51,10 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </Button>
+      <Label layoutX="316.0" layoutY="14.0" text="Checklist" textFill="#2c363f">
+         <font>
+            <Font name="Times Roman" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
